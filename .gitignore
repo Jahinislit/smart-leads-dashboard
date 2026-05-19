@@ -1,0 +1,11 @@
+node_modules
+dist
+.env
+.DS_Store
+npm-debug.log*
+client/dist
+server/dist
+*.tsbuildinfo
+client/vite.config.js
+client/vite.config.d.ts
+Full Stack Intern Assigment.pdf
