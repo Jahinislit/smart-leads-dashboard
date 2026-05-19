@@ -1,4 +1,4 @@
-# Smart Leads Dashboard
+# GigFlow - Smart Leads Dashboard
 
 A full-stack MERN Lead Management Dashboard built for the internship assignment. It uses React, TypeScript, TailwindCSS, Node.js, Express, MongoDB, Mongoose, JWT auth, bcrypt password hashing, role-based access control, backend pagination, debounced search, CSV export, and Docker.
 
@@ -195,19 +195,4 @@ After deployment, seed demo data from the backend shell:
 node dist/seed.js
 ```
 
-## Demo Recording Checklist
 
-For a 2-minute demo, show:
-
-- Login as admin
-- Create and update a lead
-- Open single lead details
-- Use status/source filters with search and sort
-- Show backend pagination
-- Export CSV
-- Toggle dark mode
-- Login as sales and show delete is restricted
-
-## Submission Notes
-
-The assignment asks for a GitHub repository URL, updated resume, README, `.env.example`, API documentation, setup instructions, and a deployment link if available.
