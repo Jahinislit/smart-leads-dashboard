@@ -122,12 +122,91 @@ The seed script creates 12 leads so pagination, combined filters, CSV export, an
 
 ## API Documentation
 
-See [docs/API.md](docs/API.md).
+Base URL:
 
-## Deployment And Demo
+```text
+http://localhost:5000/api
+```
 
-- Deployment guide: [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)
-- 2-minute recording script: [docs/DEMO_RECORDING_SCRIPT.md](docs/DEMO_RECORDING_SCRIPT.md)
+Protected endpoints require:
+
+```text
+Authorization: Bearer <token>
+```
+
+Auth endpoints:
+
+```text
+POST /auth/register
+POST /auth/login
+GET  /auth/me
+```
+
+Lead endpoints:
+
+```text
+GET    /leads
+GET    /leads/:id
+POST   /leads
+PATCH  /leads/:id
+DELETE /leads/:id
+GET    /leads/export
+```
+
+Supported lead query params:
+
+```text
+page=1
+status=New|Contacted|Qualified|Lost
+source=Website|Instagram|Referral
+search=Rahul
+sort=latest|oldest
+```
+
+The list endpoint returns pagination metadata with `page`, `limit`, `total`, `totalPages`, `hasNextPage`, and `hasPreviousPage`.
+
+## Deployment Notes
+
+Recommended deployment:
+
+- MongoDB Atlas for database
+- Render for the Express API
+- Vercel for the React frontend
+
+Backend environment variables:
+
+```text
+MONGO_URI=<MongoDB Atlas connection string>
+JWT_SECRET=<generated random secret>
+JWT_EXPIRES_IN=7d
+PORT=5000
+CLIENT_URL=<frontend deployment URL>
+```
+
+Frontend environment variable:
+
+```text
+VITE_API_URL=<backend deployment URL>/api
+```
+
+After deployment, seed demo data from the backend shell:
+
+```bash
+node dist/seed.js
+```
+
+## Demo Recording Checklist
+
+For a 2-minute demo, show:
+
+- Login as admin
+- Create and update a lead
+- Open single lead details
+- Use status/source filters with search and sort
+- Show backend pagination
+- Export CSV
+- Toggle dark mode
+- Login as sales and show delete is restricted
 
 ## Submission Notes
 
