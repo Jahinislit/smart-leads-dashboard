@@ -1,4 +1,4 @@
-# Smart Leads Dashboard
+# GigFlow - Smart Leads Dashboard
 
 A full-stack MERN Lead Management Dashboard built for the internship assignment. It uses React, TypeScript, TailwindCSS, Node.js, Express, MongoDB, Mongoose, JWT auth, bcrypt password hashing, role-based access control, backend pagination, debounced search, CSV export, and Docker.
 
