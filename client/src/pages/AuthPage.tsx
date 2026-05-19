@@ -32,7 +32,7 @@ export const AuthPage = ({ mode }: { mode: "login" | "register" }) => {
     <main className="flex min-h-screen items-center justify-center bg-slate-100 px-4 py-8 dark:bg-slate-950">
       <section className="w-full max-w-md rounded-lg border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900">
         <div className="mb-6">
-          <p className="text-sm font-semibold uppercase tracking-wide text-brand-600 dark:text-brand-50">Smart Leads</p>
+          <p className="text-sm font-semibold uppercase tracking-wide text-brand-600 dark:text-brand-50">GigFlow</p>
           <h1 className="mt-2 text-2xl font-bold text-slate-950 dark:text-white">{mode === "login" ? "Welcome back" : "Create your account"}</h1>
           <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">Manage leads with role-aware access and fast filtering.</p>
         </div>

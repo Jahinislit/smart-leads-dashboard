@@ -12,7 +12,7 @@ export const DashboardHeader = ({ user, dark, onToggleTheme, onLogout }: Dashboa
   <header className="border-b border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900">
     <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
       <div>
-        <p className="text-sm font-semibold uppercase tracking-wide text-brand-600 dark:text-brand-50">Smart Leads Dashboard</p>
+        <p className="text-sm font-semibold uppercase tracking-wide text-brand-600 dark:text-brand-50">GigFlow</p>
         <h1 className="text-2xl font-bold">Lead Management</h1>
       </div>
       <div className="flex flex-wrap items-center gap-2">
